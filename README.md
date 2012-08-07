@@ -1,4 +1,4 @@
-# Nawl
+# Nawl [![Build Status](https://secure.travis-ci.org/avdgaag/nawl.png?branch=master)](http://travis-ci.org/avdgaag/nawl)
 
 Nawl is a gem that adds custom null objects to your Rails models. These null
 objects are perfect for encapsulating the logic in the case of a missing
