@@ -1,0 +1,7 @@
+--no-private
+--title "Nawl: null objects for Rails models"
+--readme README.md
+--markup markdown
+-
+HISTORY.md
+LICENSE
