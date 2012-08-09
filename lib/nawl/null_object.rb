@@ -25,6 +25,10 @@ module Nawl
     def method_missing(name, *args)
       self
     end
+    
+    def respond_to_missing?(name)
+      true
+    end
 
     def inspect
       '#<NullObject:0x%08x>' % (object_id * 2)
