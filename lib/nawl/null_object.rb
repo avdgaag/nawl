@@ -25,8 +25,8 @@ module Nawl
     def method_missing(name, *args)
       self
     end
-    
-    def respond_to_missing?(name)
+
+    def respond_to_missing?(name, include_private = false)
       true
     end
 
