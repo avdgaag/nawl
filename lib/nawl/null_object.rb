@@ -23,7 +23,7 @@ module Nawl
     end
 
     def method_missing(name, *args)
-      nil
+      self
     end
 
     def inspect
