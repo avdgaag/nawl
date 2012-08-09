@@ -30,6 +30,6 @@ describe Nawl do
     its(:title) { should == 'foo' }
     its(:price) { should == 0 }
     its(:class) { should == Dummy }
-    its(:foo)   { should be_nil }
+    its(:foo)   { should be_kind_of(Nawl::NullObject) }
   end
 end

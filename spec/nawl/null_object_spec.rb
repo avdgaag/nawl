@@ -6,5 +6,5 @@ describe Nawl::NullObject do
   its(:to_a) { should == [] }
   its(:to_f) { should == 0.0 }
   its(:to_h) { should == {} }
-  its(:foo)  { should be_nil }
+  its(:foo)  { should == subject }
 end
