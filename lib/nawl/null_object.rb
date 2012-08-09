@@ -22,6 +22,10 @@ module Nawl
       0.0
     end
 
+    def nil?
+      true
+    end
+
     def method_missing(name, *args)
       self
     end
