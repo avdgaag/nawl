@@ -25,11 +25,11 @@ describe Nawl do
   end
 
   describe 'custom null objects' do
-    subject { Dummy.null_object }
-    it { should be_kind_of(Nawl::NullObject) }
+    subject     { Dummy.null_object }
+    it          { should be_kind_of(Nawl::NullObject) }
     its(:title) { should == 'foo' }
     its(:price) { should == 0 }
     its(:class) { should == Dummy }
-    its(:foo)   { should be_kind_of(Nawl::NullObject) }
+    its(:foo)   { should be_nil }
   end
 end

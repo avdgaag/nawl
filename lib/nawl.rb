@@ -58,9 +58,9 @@ module Nawl
       const_name = "Null#{class_name}".to_sym
       const_set(const_name, Class.new(NullObject) {
         null_object_stubs.each do |method, value|
-        return_value = value.nil? ? self : value
-        define_method(method) { |*args| return_value }
-        define_method(:class) { class_name }
+          return_value = value.nil? ? self : value
+          define_method(method) { |*args| return_value }
+          define_method(:class) { class_name }
         end
       })
       @null_object = const_get(const_name).new
