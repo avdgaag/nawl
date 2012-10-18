@@ -60,8 +60,8 @@ module Nawl
         null_object_stubs.each do |method, value|
           return_value = value.nil? ? self : value
           define_method(method) { |*args| return_value }
-          define_method(:class) { class_name }
         end
+        define_method(:class) { class_name }
       })
       @null_object = const_get(const_name).new
     end
